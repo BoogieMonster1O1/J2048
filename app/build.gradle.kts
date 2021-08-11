@@ -33,3 +33,7 @@ tasks.test {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+val run by tasks.getting(JavaExec::class) {
+    standardInput = System.`in`
+}
